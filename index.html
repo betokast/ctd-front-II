@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <header class="gridItem header">
+        <h1>Personalize seu super-herói</h1>
+        <h2>Checkpoint I - Front II</h2>
+      </header>
+      <aside class="gridItem aside aside-area">
+        <form id="form" action="submit" class="form-area">
+          <label for="nome">Nome do personagem:</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
+
+          <label for="descricao">Descrição do personagem:</label>
+          <textarea
+            name="descricao"
+            id="descricao"
+            cols="30"
+            rows="8"
+            placeholder="Descrição"
+          ></textarea>
+
+          <label for="url">Cadastre a url da imagem:</label>
+          <input type="text" name="url" id="url" placeholder="Url Imagem" />
+
+          <div class="btn-area">
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </form>
+      </aside>
+      <main class="gridItem main">
+        <div class="gridMainContainer"></div>
+      </main>
+      <footer class="gridItem footer gridFooterContainer">
+        <p>Juan Evangelista | Pedro Marques | Roberto Castro</p>
+        <p>2022</p>
+      </footer>
+    </div>
+  </body>
+</html>

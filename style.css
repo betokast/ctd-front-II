@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #000;
+}
+
+.gridContainer {
+  width: 90%;
+  height: 100vh;
+  display: grid;
+  background-color: rgb(126, 248, 197);
+  margin: 0 auto;
+  color: #fff;
+
+  grid-template-columns: 330px 1fr;
+  grid-template-rows: 180px 1fr 70px;
+
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+.gridItem:nth-child(1) {
+  background-color: #2c1320;
+  grid-area: header;
+}
+.gridItem:nth-child(2) {
+  background-color: #5f4b66;
+  grid-area: aside;
+}
+
+.gridItem:nth-child(3) {
+  background-color: #fff;
+  grid-area: main;
+}
+
+.gridItem:nth-child(4) {
+  background-color: #2c1320;
+  grid-area: footer;
+  padding: 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > h1 {
+  margin: 15px auto;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside p {
+  margin: 50px 50px 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.aside p:hover {
+  color: blue;
+}
+
+.gridMainContainer {
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+}
+
+.gridMainItem:nth-child(1),
+.gridMainItem:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.gridMainItem:nth-child(3) {
+  line-height: 25px;
+}
+
+.gridFooterContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+}
+
+.gridContainer footer > p {
+  text-align: center;
+}
+
+.aside-area {
+  display: flex;
+  align-items: center;
+}
+
+.form-area {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  row-gap: 10px;
+  font-weight: bold;
+}
+
+form > input {
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+form > textarea{
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.btn-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #2C1320;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #521a37;
+}
